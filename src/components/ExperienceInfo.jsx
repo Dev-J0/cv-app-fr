@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { BsFillPlusSquareFill } from "react-icons/bs";
+import { TbCircleDotted } from "react-icons/tb"
+import { AiFillEdit } from "react-icons/ai"
 
 function WorkExperience() {
   const [workPlaceList, setWorkPlaceList] = useState([]);
@@ -78,23 +80,20 @@ function WorkExperience() {
 
   return (
     <div className="job-container">
-      <h2>Experience & Projects/Contributions</h2>
       <div className="experiencecontainer">
         <div className="summary-Container">
           {isRegistered ? (
             <>
-              <h3>About</h3>
               <pre>{summary}</pre>
-              <button className="edit-button" onClick={handleEdit}></button>
+              <button className="edit-button" onClick={handleEdit}><AiFillEdit /></button>
             </>
           ) : (
             <>
               <form onSubmit={handleSubmit}>
                 <label>
-                  About
                   <textarea
                     id="summary"
-                    placeholder="Write a few words about yourself! "
+                    placeholder="Écrivez quelques mots sur vous !"
                     value={summary}
                     onChange={handleSummaryChange}
                     className={editMode ? "edit-mode" : ""}
@@ -109,23 +108,25 @@ function WorkExperience() {
             </>
           )}
         </div>
+        <h2>Expérience & Projets/Contributions</h2>
         <div className="experience-and-projects-container">
           <div className="list1">
-          <h3>Work </h3>
+          <h3>Travail</h3>
           <label>
-            Work 
+  
             <input
               type="text"
               id="workplace"
               value={workPlace}
+              placeholder="Poste/Rôle"
               onChange={handleWorkPlaceChange}
             />
           </label>
           <label>
-            Details
             <input
               type="text"
               id="worktitle"
+              placeholder="Description/Détails"
               value={workTitle}
               onChange={handleWorkTitleChange}
             />
@@ -133,22 +134,23 @@ function WorkExperience() {
           <button onClick={addWork}>
             <BsFillPlusSquareFill />
           </button>
-          <h3>Projects</h3>
+          <h3>Projets</h3>
           <label>
-            Projects
             <input
               type="text"
               id="projects"
+              placeholder="Nom du projet"
               value={projects}
               onChange={handleProjectsChange}
             />
           </label>
           <label>
-            Details
+         
             <input
               type="text"
               id="details"
               value={details}
+              placeholder=" Détails"
               onChange={handleDetailsChange}
             />
           </label>
@@ -159,7 +161,7 @@ function WorkExperience() {
         </div>
         <div className="list2">
         <div className="workList">
-          <h3>Work</h3>
+          <h3><TbCircleDotted /> Travail:</h3>
           <ul>
             {workPlaceList.map((item, index) => (
               <li key={index}>
@@ -169,7 +171,7 @@ function WorkExperience() {
           </ul>
         </div>
         <div className="projectsList">
-          <h3>Projects</h3>
+          <h3><TbCircleDotted /> Projets:</h3>
           <ul>
             {projectsList.map((item, index) => (
               <li key={index}>

@@ -1,11 +1,6 @@
 import { useState } from "react"
 import {  BsFillPlusSquareFill } from "react-icons/bs"
-//education background
-//university/institution/organization/school
-//program/degree
-//starting year - ending year 
-//button for (still in school)
-//additional educational info
+
 
 function EducationInfo() {
     const [university, setUniversity] = useState("");
@@ -45,10 +40,10 @@ function EducationInfo() {
 
       return (
         <div>
-          <h2>Education Background</h2>
+          <h2>Études</h2>
           <div className="containerEducation">
           <label>
-          College/Institute/School
+          Collège/Institut/École
             <input
               type="text"
               id="uni"
@@ -57,7 +52,7 @@ function EducationInfo() {
             />
           </label>
           <label>
-            Enrollment Year:
+          Année d'inscription:
             <input
               type="text"
               id="enrollmentyear"
@@ -66,7 +61,7 @@ function EducationInfo() {
             />
           </label>
           <label>
-            Graduation Year:
+          Année de fin:
             <input
               type="text"
               id="graduationyear"

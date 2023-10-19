@@ -25,12 +25,12 @@ function Languages() {
 
     return (
       <div className="language-container">
-        <h2>Languages</h2>
+        <h2>Langues</h2>
         <div className="enter-language">
           <input 
           type="text"
           id="language"
-           placeholder="Enter a language" 
+           placeholder="Ajouter une langue" 
            value={language}
            onChange={handleLanguageChange}
           />

@@ -18,7 +18,7 @@ function Footer() {
       </a>
     </div>
     <div className="inspired">
-      <h4>Inspired from </h4>
+      <h4>Inspiré de</h4>
       <a href={odinLink} target="_blank" rel="noopener noreferrer">
         <HiAcademicCap className="odin-icon" />
       </a>

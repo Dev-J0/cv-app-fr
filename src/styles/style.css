@@ -52,7 +52,9 @@ body {
 .the-title {
 	position: relative;
 	top: 0px;
-	max-width: 50px;
+	display: flex;
+	flex-direction: row;
+	
 }
 .header-h2 {
 	position: relative;
@@ -74,6 +76,15 @@ body {
 	display: flex;
 	gap: 10px;
 }
+
+#firstname, #lastname{
+	margin-right: 5px;
+}
+
+#workplace, #projects {
+	margin-right: 10px;
+}
+
 .edit-button,.reset-button {
 	background:transparent;
 	color: #F1F0EA;
@@ -138,19 +149,24 @@ body {
 	padding-right: 20px;
 	margin: 5px;
 }
+
+.sidebar-component h2 {
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
 #sidebar-component1 {
 	text-align: left;
 }
 #sidebar-component2 {
 	margin-top: 20px;
-	text-align: right;
+	text-align: left;
 	margin-right: 50px;
 }
 #sidebar-component2 button {
 	position: absolute;
 }
 #sidebar-component3 {
-	text-align: right;
+	text-align: left;
 	margin-right: 50px;
 }
 .sidebar-component input {
@@ -232,7 +248,7 @@ input:focus {
 	margin-top: 20px;
 	font-size: 25px;
 	width: 80%;
-	height: 50px;
+	height: 80px;
 	padding: 12px 20px;
 	box-sizing: border-box;
 	border: 2px solid #a2a3a3;
@@ -282,9 +298,9 @@ h3 {
 	font-size: 16px;
 }
 .mainContent-component1 {
-	height: 30%;
+	height: 20%;
 	display: flex;
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-right: 10px;
 	flex-grow: 1;
 	flex-basis: 200;
@@ -304,7 +320,6 @@ h3 {
   height: 1200px;
   display: flex;
   flex-direction: column; 
-  margin-top: 20px;
   padding-top: 30px;
   color: rgb(87, 83, 83);
   width: 1000px;
@@ -522,6 +537,7 @@ li {
 	}
 	#sidebar-component2 {
 		margin-top: 50px;
+
 	}
 }
 /* For the .main and other containers, show scrollbars when content exceeds their dimensions */

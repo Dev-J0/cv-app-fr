@@ -51,10 +51,10 @@ function Header() {
   return (
     <div className="Basic-Info">
       <div className="resume-title">
-        <h1 className="the-title">Resume</h1>
+        <h1 className="the-title">Générateur de CV</h1>
       </div>
       <h2 className="header-h2">
-        Please fill in the information to put together a professional CV!
+      Merci de remplir les informations pour constituer un CV professionnel !
       </h2>
       <div className="name-info">
         {isRegistered ? (
@@ -81,7 +81,7 @@ function Header() {
               <input
                 type="text"
                 id="firstname"
-                placeholder="First Name"
+                placeholder="Prénom"
                 value={firstName}
                 onChange={handleFirstNameChange}
                 className={editMode ? "edit-mode" : ""}
@@ -91,7 +91,7 @@ function Header() {
               <input
                 type="text"
                 id="lastname"
-                placeholder="Last Name"
+                placeholder="Nom de famille"
                 value={lastName}
                 onChange={handleLastNameChange}
                 className={editMode ? "edit-mode" : ""}
@@ -101,7 +101,7 @@ function Header() {
               <input
                 type="text"
                 id="title"
-                placeholder="Title"
+                placeholder="Titre/Fonction"
                 value={title}
                 onChange={handleTitleChange}
                 className={editMode ? "edit-mode" : ""}

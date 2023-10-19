@@ -25,12 +25,12 @@ function SkillsInfo() {
   
     return (
         <div className="skills-container">
-          <h2>Technical Skills</h2>
+          <h2>Compétences techniques</h2>
           <div className="enter-skill">
             <input
               type="text"
               id="skill"
-              placeholder="Enter a skill"
+              placeholder="Entrez une compétence"
               value={skill}
               onChange={handleSkillChange}
             />
