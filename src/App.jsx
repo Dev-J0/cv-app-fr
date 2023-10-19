@@ -17,7 +17,9 @@ function App() {
         <div className="mainContent-container">
         <MainContent />
         </div>
+        <div className="sideBar">
       <SideBar />
+      </div>
       </div>
       <div className="footer">
         <Footer />
