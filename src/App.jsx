@@ -2,7 +2,7 @@ import './App.css'
 import './styles/style.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import SideBar from './components/SideBar'
+import Sidebar from './components/SideBar'
 import MainContent from './components/MainContent'
 
 
@@ -18,7 +18,7 @@ function App() {
         <MainContent />
         </div>
         <div className="sideBar">
-      <SideBar />
+      <Sidebar />
       </div>
       </div>
       <div className="footer">

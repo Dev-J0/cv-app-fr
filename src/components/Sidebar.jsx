@@ -3,7 +3,7 @@ import BasicInfo from './BasicInfo.jsx'
 import Languages from './Languages.jsx'
 
 
-function SideBar() {
+function Sidebar() {
   return (
     <div className="sidebar-container">
       <div className="sidebar-component" id="sidebar-component1"><BasicInfo /></div>
@@ -13,4 +13,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default Sidebar;
