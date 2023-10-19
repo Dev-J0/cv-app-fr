@@ -69,6 +69,8 @@ button:focus {
 }
 
 h2 {
+
+	text-shadow: 1px -3px 5px rgba(37, 135, 132, 0.13);
 	--b: 0.1em;   /* the thickness of the line */
 	--c: #10c1b8; /* the color */
 	
@@ -180,6 +182,7 @@ h4:hover {
 	position: fixed;
 	top: 0px;
 	border-radius: 25px 90px 0px 0px;
+	box-shadow: rgba(31, 95, 82, 0.521) 0px 5px 15px;
 }
 .sidebar-component {
 	padding-left: 20px;
@@ -298,6 +301,7 @@ input:focus {
 	outline-style:none;
 	outline-color: #0d3a32;
 	display: flex;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 #summary:hover {
@@ -354,6 +358,11 @@ button:active,:focus {
 	outline: none;
 	border: none;
   
+}
+
+button:hover, ::after {
+	outline: none;
+	border: none;
 }
 
 
